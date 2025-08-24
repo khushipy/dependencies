@@ -196,7 +196,6 @@ def read_output_file(case_id):
     try:
         with open(output_filename, "r", encoding="utf-8") as f:
             line = f.readline().rstrip('\n\r')
-        print(f"[DEBUG] Output content: {line}")
         return line, True
     except Exception as e:
         print(f"[ERROR] Failed to read output file {output_filename}: {e}")
