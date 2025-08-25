@@ -181,7 +181,7 @@ def run_exe_on_batch(inputs, exe_name):
         tb = traceback.format_exc()
         print(f"[TRACEBACK] {tb}")
         return False, error_msg
-        print(f"[ERROR] Exception during exe run: {e}\n{tb}")
+        
         return False, f"Exception: {e}\n{tb}"
 
 
