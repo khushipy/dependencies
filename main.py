@@ -6,6 +6,7 @@ import subprocess            # For running external processes
 import multiprocessing       # For CPU core detection and parallel processing
 from datetime import datetime  # For timestamp generation
 from concurrent.futures import ProcessPoolExecutor, wait, FIRST_COMPLETED  # For parallel task execution
+import traceback
 
 # Third-party imports
 import openpyxl  # For Excel file operations
